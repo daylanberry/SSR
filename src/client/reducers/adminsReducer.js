@@ -1,11 +1,11 @@
-import { FETCH_USERS } from '../actions/index';
+import { FETCH_ADMINS } from '../actions';
 
 export default (state=[], action) => {
 
-  switch (action.type) {
-    case FETCH_USERS:
+  switch(action.type) {
+    case FETCH_ADMINS:
       return action.payload
     default:
       return state
   }
-};
+}
